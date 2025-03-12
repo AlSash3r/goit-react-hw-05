@@ -1,15 +1,22 @@
 .container {
+    width: 800px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    background-color: #f0f0f0;
+    background-color: rgb(83, 128, 225);
+    text-align: center;
+    border-radius: 10px;
 }
 
 .text {
-    font-size: 24px;
+    font-size: 54px;
     color: #333;
+    text-align: center;
     margin-bottom: 20px;
+    border: 3px solid #FF00FF;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .link {
@@ -19,8 +26,32 @@
     color: #ffffff;
     text-decoration: none;
     border-radius: 5px;
+    text-align: center;
 }
 
 .link:hover {
     background-color: #0056b3;
+}
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+
+    .text {
+        font-size: 36px;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .text {
+        font-size: 28px;
+    }
+
+    .link {
+        padding: 8px 16px;
+    }
 }
