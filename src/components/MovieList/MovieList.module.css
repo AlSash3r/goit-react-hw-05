@@ -1,0 +1,55 @@
+.loading {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: oblique;
+}
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.item {
+    flex-basis: calc(33.33% - 20px);
+    margin: 0;
+}
+.link {
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Italiana', serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+.link:hover {
+    color: #f84f7c;
+}
+
+.image {
+    width: 350px;
+    height: 500px;
+    border-radius: 10px;
+}
+@media (max-width: 1024px) {
+    .item {
+        flex-basis: calc(50% - 20px);
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .item {
+        flex-basis: calc(100% - 20px);
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+    }
+}

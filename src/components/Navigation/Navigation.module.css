@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+.navigationHeader {
+    background-color: #da677b;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navig {
+    color: #fff;
+    font-size: 22px;
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: 2px solid #fff;
+    font-family: 'Italiana', serif;
+    box-sizing: border-box;
+}
+
+.navig:hover,
+.navig:focus {
+    background-color: #ffffff;
+    color: #1e90ff;
+    outline: none;
+}
+
+.active {
+    background-color: transparent;
+    color: inherit;
+}
+
+.mainContent {
+    padding-top: 70px;
+}
+@media (max-width: 768px) {
+    .navig {
+        font-size: 18px;
+        padding: 8px 16px;
+    }
+
+    .mainContent {
+        padding-top: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navig {
+        font-size: 16px;
+        padding: 6px 12px;
+    }
+
+    .mainContent {
+        padding-top: 50px;
+    }
+}

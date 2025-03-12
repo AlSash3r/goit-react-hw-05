@@ -1,0 +1,159 @@
+.container {
+    padding: 20px;
+}
+
+.backButton {
+    margin-bottom: 20px;
+}
+
+.backLink {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #4c00ff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.poster {
+    max-width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.userScore {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.overview {
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.genres {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style-type: none;
+    padding: 0;
+    justify-content: center;
+}
+
+.genre {
+    background-color: #4972ec;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.link {
+    text-decoration: none;
+    color: #007bff;
+    background-color: #e6f7ff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.link:hover {
+    text-decoration: none;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #C71585;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 50px;
+}
+
+.button:hover {
+    background-color: #AD1457;
+    transform: translateY(-2px);
+}
+
+.button:active {
+    transform: translateY(0);
+}
+
+.button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(199, 21, 133, 0.5);
+}
+
+.text {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .poster {
+        width: 100%;
+        height: auto;
+    }
+
+    .title {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .userScore,
+    .overview,
+    .genre,
+    .link,
+    .button,
+    .text {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .details,
+    .info,
+    .genres,
+    .links {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+.container {
+    padding: 20px;
+}
+
+.title {
+    font-size: 45px;
+    margin-bottom: 20px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+}
+
+.movieList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .title {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    .movieList {
+        gap: 10px;
+    }
+}
